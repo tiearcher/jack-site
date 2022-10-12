@@ -10,17 +10,21 @@ body {
   margin: 0;
 }
 
-.running {
-  background-color: rgba(197, 68, 46, 1);
-}
 
 header {
   padding: 1rem;
+    background-color: rgba(255, 164, 142, 1);
+}
+
+header div {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   margin: 0;
-  Padding: 1rem;
+  Padding: 2rem 1rem 1rem;
+  font-size: 1.5rem;
 }
 
 .nav {
@@ -33,10 +37,24 @@ h1 {
 }
 
 .nav li {
-  padding: 0 2rem;
+  padding: 0 3.5rem;
 }
 
 .nav li a {
+  font-size: 1.2rem;
+  transition-property: all;
+  transition-duration: .15s;
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav li a:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(244, 114, 80, 1);
+  padding: .5rem 4.5rem;
+  border-radius: 8px;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -45,11 +63,51 @@ main {
   flex-direction: column;
   justify-content: center;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2rem auto;
+}
+
+main div {
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 4.5rem;
+  margin: 1rem;
+}
+
+.convert {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.convert div {
+  display: flex;
+  justify-content: center;
+}
+
+.convert-text {
+  font-size: 1.2rem;
+}
+
+button, input{
+  padding: 1rem 3rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.2rem;
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: thick;
+  border-radius: 8px;
+  transition-property: all;
+  transition-duration: .23s;
+}
+
+button, input:hover{
+  transform: scale(1.1);
+  color: rgba(244, 114, 80, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .footer {
@@ -62,4 +120,14 @@ h2 {
 
 .footer p {
   padding: 0 2rem;
+  color: rgba(255, 212, 201, 1);
+}
+
+.footer p a{
+  text-decoration: underline;
+  color: rgba(255, 212, 201, 1);
+}
+
+.footer p a:hover {
+  color: rgba(255, 255, 255, 1);
 }
