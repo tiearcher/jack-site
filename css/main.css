@@ -1,5 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
-html{
-  font-family: 'Prata', serif;
+html {
+  font-family: 'Yeseva One', cursive;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(244, 114, 80, 1);
+}
+
+main {
+  max-width: 700px;
+}
+
+.running {
+  background-color: rgba(197, 68, 46, 1);
+}
+
+.nav {
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 0;
+padding: 1rem, 0;
+list-style-type: none;
+}
+
+.nav li {
+  padding: 0 2rem;
+}
+
+.nav li a {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.footer p {
+  padding: 0 2rem;
 }
