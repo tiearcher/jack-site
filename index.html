@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Temperature Converter</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+  <script type="text/javascript">
+    function converttemperature(){
+    run=true;
+    formula=0;
+    while(run==true){
+      var option = prompt("Enter celcius(c) or farenheit(f)");
+      run1=false;
+      switch(option){
+        case "c":
+            formula=1
+            run=false
+        break;
+        case "f":
+            formula=2
+            run=false
+        break;
+        default:
+            alert("Invalid input, enter c or f");
+            run=true;
+        break;
+      }
+    }
+    check=true;
+    while(check==true){
+      var number = prompt("Enter value to be converted");
+      if(isNaN(number)){
+          alert("Invalid input, enter a number");
+      } else{
+        check=false;
+      }
+    }
+    switch(formula){
+      case 1:
+      C = 5/9*(number-32)
+      alert(number+" F converted to "+C+ " C");
+      break;
+      case 2:
+      F = (9/5 * number) + 32
+      alert(number+" C converted to "+F+ " F");
+      break;
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+  </header>
+
+</body>
+
+<footer>
+  <p>Jack Prikker</p>
+  <p>
+    <a href="mailto:prik0004@algonquinlive.com">Contact me</a>
+  </p>
+</footer>
