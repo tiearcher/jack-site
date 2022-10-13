@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Yeseva+One&display=swap');
 
 html {
-  font-family: 'Yeseva One', cursive;
+font-family: 'Quicksand', sans-serif;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(244, 114, 80, 1);
 }
@@ -12,8 +12,14 @@ body {
 
 
 header {
-  padding: 1rem;
-    background-color: rgba(255, 164, 142, 1);
+  padding: 2rem 13rem .5rem;
+  background-color: rgba(255, 164, 142, 1);
+  border-bottom: solid;
+  border-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header div {
@@ -23,35 +29,45 @@ header div {
 
 h1 {
   margin: 0;
-  Padding: 2rem 1rem 1rem;
-  font-size: 1.5rem;
+  Padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: normal;
+  max-width: 30rem;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin: 0;
   padding: 1rem, 0;
   list-style-type: none;
 }
 
 .nav li {
-  padding: 0 3.5rem;
+  padding: 0 2rem;
 }
 
 .nav li a {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   transition-property: all;
-  transition-duration: .15s;
+  transition-duration: .23s;
   color: rgba(255, 255, 255, 1);
+  padding: .5rem 1.5rem;
 }
 
 .nav li a:hover {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(244, 114, 80, 1);
-  padding: .5rem 4.5rem;
   border-radius: 8px;
+}
+
+.nav li {
+  transition-property: all;
+  transition-duration: .23s;
+}
+
+.nav li:hover{
+  transform: scale(1.1);
 }
 
 a {
@@ -62,8 +78,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px;
-  margin: 2rem auto;
+  max-width: 750px;
+  margin: 3rem auto 8rem;
 }
 
 main div {
@@ -71,9 +87,15 @@ main div {
   justify-content: center;
 }
 
+
 h2 {
-  font-size: 4.5rem;
-  margin: 1rem;
+  font-size: 5.5rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  font-family: 'Yeseva One', cursive;
+  border-left: solid;
+  border-color: rgba(255, 255, 255, 1);
+  border-width: medium;
 }
 
 .convert {
@@ -94,8 +116,9 @@ button, input{
   padding: 1rem 3rem;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 0);
-  font-family: 'Yeseva One', cursive;
-  font-size: 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
   border-color: rgba(255, 255, 255, 1);
   border-style: solid;
   border-width: thick;
@@ -115,7 +138,6 @@ button, input:hover{
   flex-direction: row;
   justify-content: center;
   margin: 0;
-  padding: 1rem 0;
 }
 
 .footer p {
